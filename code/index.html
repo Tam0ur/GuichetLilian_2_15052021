@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Test</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/all.css">
 </head>
 <div id="contenu">
     <header>
         <div id="titre_principal">
-            <h1>Reservia</h1>
-            <title> </title>
+            
+            <img src="/images/logo/Reservia@3x.png" alt="Logo Reservia">
+            <title>Projet reservia</title>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Hébergements</a></li>
                 <li><a href="#">Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <li><a style="color: #0065FC;" href="#">S'inscrire</a></li>
             </ul>
         </nav>
         <div id="menu">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <p>
-                <label for="lieu"> PIN </label><input type="text" name="lieu" id="lieu" value="Marseille, France"><input type="button" value="Rechercher">
+                <label for="lieu"> <i class="fas fa-map-marker-alt"></i> </label><input type="text" name="lieu" id="lieu" value="Marseille, France"><input type="button" value="Rechercher">
             </p>
             <div id="filtres">
                 <p>Filtres 
-                <input type="button" value="Économique">
-                <input type="button" value="Familial">
-                <input type="button" value="Romantique">
-                <input type="button" value="Animaux autorisés"> 
+                    
+                <button type="submit" value="Submit"> <i class="fas fa-money-bill-wave"></i> Économique</button>
+                <button type="submit" value="Submit"> <i class="fas fa-child"></i> Familial</button>
+                <button type="submit" value="Submit"> <i class="fas fa-heart"></i> Romantique</button>
+                <button type="submit" value="Submit"> <i class="fas fa-paw"></i> Animaux autorisés</button>
                 </p>
             </div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </header>
+
     <section>
-
-        <aside>
-
-        </aside>
+        <h1>Hébergements à Marseille</h1>
+        
+        <p><strong>Afficher plus</strong></p>
     </section>
-    
-    <section>
+    <aside>
+        <h1>Les plus populaires</h1>
 
+    </aside>
+    <section>
+        <h1>Activités à marseille</h1>
     </section>
 
     <footer>
