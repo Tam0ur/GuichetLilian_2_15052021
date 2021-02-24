@@ -1,0 +1,103 @@
+/*ALL*/
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+i
+{
+    color: #0065FC;
+}
+
+
+/*HEADER*/
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*HÉBERGEMENTS*/
+#Hébergements
+{
+    border: 10px solid red;
+}
+.hébergements
+{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid red;
+}
+
+/*POPULAIRES*/
+#Populaires
+{
+    border: 10px solid blue;
+}
+.populaires
+{
+    width: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+/*ACTIVITÉS*/
+#Activités
+{
+    border: 10px solid green;
+}
+.activités
+{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid green;
+}
+
+/*FOOTER */
+footer
+{
+    background-color: #f2f2f2;
+}
+
+#conteneur
+{
+    display: flex;
+    vertical-align: top;
+    justify-content: space-around;
+}
+
+.informations
+{
+    width : 400px;
+    height: 200px;
+}
+/*
+.informations:nth-child(1)
+{
+    background-color: orange;
+}
+
+.informations:nth-child(2)
+{
+    background-color: blue;
+}
+
+.informations:nth-child(3)
+{
+    background-color: greenyellow;
+}*/
+
+/*FONTS*/
+@font-face {
+    font-family: "Raleway";
+    src: url("/css/Raleway-VariableFont_wght.ttf"),
+         url("/css/Raleway-Italic-VariableFont_wght.ttf");
+   }
