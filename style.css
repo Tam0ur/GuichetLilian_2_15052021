@@ -1,0 +1,146 @@
+/*ALL*/
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+i
+{
+    color: #0065FC;
+}
+
+
+/*HEADER*/
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.button
+{
+    border-radius: 150px ;
+    border: 2px #b4b4b4 solid;
+    margin: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    font-size: 1.5em;
+}
+.button i
+{
+    background-color: black;
+
+}
+
+/*HÉBERGEMENTS*/
+#Hébergements
+{
+    padding : 20px;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    border : 1px solid red;
+}
+.hébergements
+{
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    border: 1px solid red;
+    background-color: white;
+    
+}
+.hébergements img
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*POPULAIRES*/
+#Populaires
+{
+    border: 1px solid blue;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+}
+.populaires
+{
+
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.populaires img
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*ACTIVITÉS*/
+#Activités
+{
+    border: 10px solid greenyellow;
+}
+.activités
+{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid green;
+}
+.activités img
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*FOOTER */
+footer
+{
+    background-color: #f2f2f2;
+}
+
+#conteneur
+{
+    display: flex;
+    vertical-align: top;
+    justify-content: space-around;
+}
+
+.informations
+{
+    width : 400px;
+    height: 200px;
+}
+/*
+.informations:nth-child(1)
+{
+    background-color: orange;
+}
+
+.informations:nth-child(2)
+{
+    background-color: blue;
+}
+
+.informations:nth-child(3)
+{
+    background-color: greenyellow;
+}*/
+
+/*FONTS*/
+@font-face {
+    font-family: "Raleway";
+    src: url("/css/Raleway-VariableFont_wght.ttf"),
+         url("/css/Raleway-Italic-VariableFont_wght.ttf");
+   }
