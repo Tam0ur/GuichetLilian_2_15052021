@@ -7,6 +7,11 @@ i
 {
     color: #0065FC;
 }
+span i{
+    color: #dadada;
+}
+
+
 
 
 /*HEADER*/
@@ -14,52 +19,53 @@ ul
 {
     list-style-type: none;
 }
-
 a
 {
     text-decoration: none;
     color: black;
 }
+#blue{
+    color: #0065fc;
+}
+#black{
+    color: black;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    border: 1px solid black;
+}
+header img{
+    width: 30%;
+
+    border: 2px solid blue;
+}
+header nav{
+    width: 30%;
+
+    border: 2px solid green;
+}
+header ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    border: 2px solid red;
+}
+
+
+
 
 /*HÉBERGEMENTS*/
-#Hébergements
-{
-    border: 10px solid red;
-}
-.hébergements
-{
-    padding: 10px;
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid red;
-}
+
 
 /*POPULAIRES*/
-#Populaires
-{
-    border: 10px solid blue;
-}
-.populaires
-{
-    width: 10%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid blue;
-}
+
 
 /*ACTIVITÉS*/
-#Activités
-{
-    border: 10px solid green;
-}
-.activités
-{
-    padding: 10px;
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid green;
-}
+
 
 /*FOOTER */
 footer
@@ -74,30 +80,5 @@ footer
     justify-content: space-around;
 }
 
-.informations
-{
-    width : 400px;
-    height: 200px;
-}
-/*
-.informations:nth-child(1)
-{
-    background-color: orange;
-}
-
-.informations:nth-child(2)
-{
-    background-color: blue;
-}
-
-.informations:nth-child(3)
-{
-    background-color: greenyellow;
-}*/
-
 /*FONTS*/
-@font-face {
-    font-family: "Raleway";
-    src: url("/css/Raleway-VariableFont_wght.ttf"),
-         url("/css/Raleway-Italic-VariableFont_wght.ttf");
-   }
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
