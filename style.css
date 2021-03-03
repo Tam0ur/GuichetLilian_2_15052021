@@ -1,84 +1,89 @@
 /*ALL*/
-*
-{
-    font-family: 'Raleway', sans-serif;
+* {
+  font-family: "Raleway", sans-serif;
+  
 }
-i
-{
-    color: #0065FC;
+i {
+  color: #0065fc;
 }
-span i{
-    color: #dadada;
+span i {
+  color: #dadada;
 }
-
-
-
 
 /*HEADER*/
-ul
-{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-a
-{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-#blue{
-    color: #0065fc;
+#blue {
+  color: #0065fc;
 }
-#black{
-    color: black;
+#black {
+  color: black;
 }
-header{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 
-    border: 1px solid black;
+  border: 1px solid black;
 }
-header img{
-    width: 30%;
+header img {
+  width: 30%;
 
-    border: 2px solid blue;
+  border: 2px solid blue;
 }
-header nav{
-    width: 30%;
+header nav {
+  width: 30%;
 
-    border: 2px solid green;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border: 2px solid green;
 }
-header ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-
-    border: 2px solid red;
+header ul {
+  border: 2px solid red;
 }
-
-
-
 
 /*HÉBERGEMENTS*/
+#hebergements{
+  
+}
+#hebergements article {
+  border: 1px solid green;
+}
+#hebergements figure{
+  border: 1px solid red;
+}
 
 
 /*POPULAIRES*/
 
-
 /*ACTIVITÉS*/
 
-
 /*FOOTER */
-footer
-{
-    background-color: #f2f2f2;
-}
+footer {
+  background-color: #f2f2f2;
 
-#conteneur
-{
-    display: flex;
-    vertical-align: top;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row nowrap;
+  vertical-align: top;
+  justify-content: space-around;
+}
+footer div{
+  width: 31%;
+}
+footer ul{
+  padding-left: 0px;
+}
+footer li{
+  padding-bottom: 14px;
 }
 
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
