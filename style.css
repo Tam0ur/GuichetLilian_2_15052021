@@ -50,21 +50,104 @@ header ul {
   border: 2px solid red;
 }
 
-/*HÉBERGEMENTS*/
-#hebergements{
+section{
   
+  border: 10px solid black;
+}
+
+
+/*MENU*/
+#menu{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+
+
+/*HÉBERGEMENTS*/
+#hebergements h2,h3, p,  #activites h2,h3, p{
+  border: 1px solid orange;
+  width: 100%;
+}
+#hebergements{
+  display: flex;
+  justify-content: space-around;
 }
 #hebergements article {
   border: 1px solid green;
+  background-color: #F2F2F2;
+
+  width: 55%;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
-#hebergements figure{
+article figure{
+  width: 300px;
+  height: 250px;
+  
+
+  display: flex;
+  flex-direction: column ;
+  justify-content: flex-end;
+  overflow: hidden;
+  
+  background-color: white;
   border: 1px solid red;
+
 }
 
 
 /*POPULAIRES*/
+#populaires {
+  border: 1px solid green;
+  background-color: #F2F2F2;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column ;
+}
+#populaires figure{
+  width: 400px;
+  height: 250px;
+  
+
+  display: inline-flex;
+  flex-direction: row ;
+  justify-content: flex-end;
+  overflow: hidden;
+  
+  background-color: white;
+  border: 1px solid red;
+}
+#populaires img{
+  border: 1px solid blue;
+  
+  width: 30%;
+  overflow: hidden;
+}
+
+#populaires figcaption{
+  border: 1px solid blue;
+  position: relative;
+  width: 70%;
+  
+}
+
 
 /*ACTIVITÉS*/
+#activites{
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+}
+#activites figure{
+  border: 1px solid red;
+  background-color: white;
+}
+
 
 /*FOOTER */
 footer {
