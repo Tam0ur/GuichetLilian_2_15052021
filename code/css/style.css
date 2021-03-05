@@ -6,8 +6,12 @@
 i {
   color: #0065fc;
 }
-span i {
+.grey {
   color: #dadada;
+}
+h2,h3,p,div {
+  border: 1px solid orange;
+  width: 100%;
 }
 
 /*HEADER*/
@@ -49,7 +53,6 @@ header nav {
 header ul {
   border: 2px solid red;
 }
-
 section{
   
   border: 10px solid black;
@@ -66,15 +69,11 @@ section{
 
 
 /*HÉBERGEMENTS*/
-#hebergements h2,h3, p,  #activites h2,h3, p{
-  border: 1px solid orange;
-  width: 100%;
-}
 #hebergements{
   display: flex;
   justify-content: space-around;
 }
-#hebergements article {
+#hebergements div {
   border: 1px solid green;
   background-color: #F2F2F2;
 
@@ -84,7 +83,7 @@ section{
   justify-content: center;
   flex-flow: row wrap;
 }
-article figure{
+div figure{
   width: 300px;
   height: 250px;
   
@@ -125,10 +124,9 @@ article figure{
 #populaires img{
   border: 1px solid blue;
   
-  width: 30%;
+  
   overflow: hidden;
 }
-
 #populaires figcaption{
   border: 1px solid blue;
   position: relative;
@@ -140,14 +138,52 @@ article figure{
 /*ACTIVITÉS*/
 #activites{
   background-color: #F2F2F2;
+
   display: flex;
-  flex-flow: row wrap;
-}
-#activites figure{
-  border: 1px solid red;
-  background-color: white;
+  flex-direction: column;
+  flex-wrap: nowrap ;
+
+  height: 600px;
 }
 
+
+#activites figure{
+  background-color: white;
+
+  overflow: hidden;
+}
+
+#activites figure:nth-child(2){
+  border: 1px solid red;
+  width: 300px;
+  height: 500px;
+  
+}
+#activites figure:nth-child(3){
+  border: 1px solid orange;
+  width: 200px;
+  height: 50px;
+}
+#activites figure:nth-child(4){
+  border: 1px solid green;
+  width: 200px;
+  height: 500px;
+}
+#activites figure:nth-child(5){
+  border: 1px solid blue;
+  width: 200px;
+  height: 500px;
+}
+#activites figure:nth-child(6){
+  border: 1px solid purple;
+  width: 200px;
+  height: 50px;
+}
+#activites figure:nth-child(7){
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+}
 
 /*FOOTER */
 footer {
