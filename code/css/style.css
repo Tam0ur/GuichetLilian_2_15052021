@@ -1,76 +1,172 @@
 /*ALL*/
-*
-{
-    font-family: 'Raleway', sans-serif;
+* {
+  font-family: "Raleway", sans-serif;
+  
 }
-i
-{
-    color: #0065FC;
+i {
+  color: #0065fc;
 }
-
+span i {
+  color: #dadada;
+}
 
 /*HEADER*/
-ul
-{
-    list-style-type: none;
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#blue {
+  color: #0065fc;
+}
+#black {
+  color: black;
+}
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  border: 1px solid black;
+}
+header img {
+  width: 30%;
+
+  border: 2px solid blue;
+}
+header nav {
+  width: 30%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border: 2px solid green;
+}
+header ul {
+  border: 2px solid red;
 }
 
-a
-{
-    text-decoration: none;
-    color: black;
+section{
+  
+  border: 10px solid black;
 }
-#blue{
-    color: #0065fc;
-}
-#black{
-    color: black;
+
+
+/*MENU*/
+#menu{
+  display: flex;
+  flex-flow: row wrap;
+
 }
 
 
 
 /*HÉBERGEMENTS*/
+#hebergements h2,h3, p,  #activites h2,h3, p{
+  border: 1px solid orange;
+  width: 100%;
+}
+#hebergements{
+  display: flex;
+  justify-content: space-around;
+}
+#hebergements article {
+  border: 1px solid green;
+  background-color: #F2F2F2;
+
+  width: 55%;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+article figure{
+  width: 300px;
+  height: 250px;
+  
+
+  display: flex;
+  flex-direction: column ;
+  justify-content: flex-end;
+  overflow: hidden;
+  
+  background-color: white;
+  border: 1px solid red;
+
+}
 
 
 /*POPULAIRES*/
+#populaires {
+  border: 1px solid green;
+  background-color: #F2F2F2;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column ;
+}
+#populaires figure{
+  width: 400px;
+  height: 250px;
+  
+
+  display: inline-flex;
+  flex-direction: row ;
+  justify-content: flex-end;
+  overflow: hidden;
+  
+  background-color: white;
+  border: 1px solid red;
+}
+#populaires img{
+  border: 1px solid blue;
+  
+  width: 30%;
+  overflow: hidden;
+}
+
+#populaires figcaption{
+  border: 1px solid blue;
+  position: relative;
+  width: 70%;
+  
+}
 
 
 /*ACTIVITÉS*/
+#activites{
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+}
+#activites figure{
+  border: 1px solid red;
+  background-color: white;
+}
 
 
 /*FOOTER */
-footer
-{
-    background-color: #f2f2f2;
-}
+footer {
+  background-color: #f2f2f2;
 
-#conteneur
-{
-    display: flex;
-    vertical-align: top;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row nowrap;
+  vertical-align: top;
+  justify-content: space-around;
 }
-
-.informations
-{
-    width : 400px;
-    height: 200px;
+footer div{
+  width: 31%;
 }
-/*
-.informations:nth-child(1)
-{
-    background-color: orange;
+footer ul{
+  padding-left: 0px;
 }
-
-.informations:nth-child(2)
-{
-    background-color: blue;
+footer li{
+  padding-bottom: 14px;
 }
-
-.informations:nth-child(3)
-{
-    background-color: greenyellow;
-}*/
 
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
