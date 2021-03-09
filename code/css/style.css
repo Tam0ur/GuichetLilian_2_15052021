@@ -1,7 +1,7 @@
 /*ALL*/
 * {
   font-family: "Raleway", sans-serif;
-  
+  box-sizing: border-box;
 }
 i {
   color: #0065fc;
@@ -53,10 +53,7 @@ header nav {
 header ul {
   border: 2px solid red;
 }
-section{
-  
-  border: 10px solid black;
-}
+
 
 
 /*MENU*/
@@ -83,7 +80,7 @@ section{
   justify-content: center;
   flex-flow: row wrap;
 }
-div figure{
+#hebergements div figure{
   width: 300px;
   height: 250px;
   
@@ -138,52 +135,44 @@ div figure{
 /*ACTIVITÉS*/
 #activites{
   background-color: #F2F2F2;
-
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap ;
-
-  height: 600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  width: 90%;
+  height: 1000px;
+  
 }
+
 
 
 #activites figure{
-  background-color: white;
+  
+  
+  width: 29%;
+  height: 200px;
+  
 
+  display: inline-flex;
+  flex-direction: column ;
+  justify-content: flex-end;
   overflow: hidden;
+  border: 1px solid black;
 }
 
-#activites figure:nth-child(2){
-  border: 1px solid red;
-  width: 300px;
-  height: 500px;
+#activites figure:nth-child(2) {
+  border: 1px solid black;
+  background-color: #FFAD77;
+  height: 800px;
+}
+.yellow {
+  background-color: #FFE377;
   
 }
-#activites figure:nth-child(3){
-  border: 1px solid orange;
-  width: 200px;
-  height: 50px;
+.purple {
+  background-color: #FF77C8;
 }
-#activites figure:nth-child(4){
-  border: 1px solid green;
-  width: 200px;
-  height: 500px;
-}
-#activites figure:nth-child(5){
-  border: 1px solid blue;
-  width: 200px;
-  height: 500px;
-}
-#activites figure:nth-child(6){
-  border: 1px solid purple;
-  width: 200px;
-  height: 50px;
-}
-#activites figure:nth-child(7){
-  border: 1px solid black;
-  width: 200px;
-  height: 50px;
-}
+
 
 /*FOOTER */
 footer {
