@@ -9,7 +9,10 @@ i {
 .grey {
   color: #dadada;
 }
-h2,h3,p,div {
+h2,
+h3,
+p,
+div {
   border: 1px solid orange;
   width: 100%;
 }
@@ -54,25 +57,20 @@ header ul {
   border: 2px solid red;
 }
 
-
-
 /*MENU*/
-#menu{
+#menu {
   display: flex;
   flex-flow: row wrap;
-
 }
 
-
-
 /*HÉBERGEMENTS*/
-#hebergements{
+#hebergements {
   display: flex;
   justify-content: space-around;
 }
 #hebergements div {
   border: 1px solid green;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   width: 55%;
 
@@ -80,99 +78,81 @@ header ul {
   justify-content: center;
   flex-flow: row wrap;
 }
-#hebergements div figure{
+#hebergements div figure {
   width: 300px;
   height: 250px;
-  
 
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-  
+
   background-color: white;
   border: 1px solid red;
-
 }
-
 
 /*POPULAIRES*/
 #populaires {
   border: 1px solid green;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   display: flex;
   align-items: center;
-  flex-flow: column ;
+  flex-flow: column;
 }
-#populaires figure{
+#populaires figure {
   width: 400px;
   height: 250px;
-  
 
   display: inline-flex;
-  flex-direction: row ;
+  flex-direction: row;
   justify-content: flex-end;
   overflow: hidden;
-  
+
   background-color: white;
   border: 1px solid red;
 }
-#populaires img{
+#populaires img {
   border: 1px solid blue;
-  
-  
+
   overflow: hidden;
 }
-#populaires figcaption{
+#populaires figcaption {
   border: 1px solid blue;
   position: relative;
   width: 70%;
-  
 }
 
-
 /*ACTIVITÉS*/
-#activites{
-  background-color: #F2F2F2;
+#activites {
+  background-color: #f2f2f2;
+  margin-left: 100px;
+  margin-right: 100px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
-  width: 90%;
-  height: 1000px;
-  
 }
 
-
-
 #activites figure{
-  
-  
-  width: 29%;
-  height: 200px;
-  
+  width: 300px;
+  height: auto;
 
   display: inline-flex;
-  flex-direction: column ;
+  flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
   border: 1px solid black;
+
+  flex-grow: 1;
 }
 
-#activites figure:nth-child(2) {
-  border: 1px solid black;
-  background-color: #FFAD77;
-  height: 800px;
+#activites .column {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
 }
-.yellow {
-  background-color: #FFE377;
-  
-}
-.purple {
-  background-color: #FF77C8;
-}
-
 
 /*FOOTER */
 footer {
@@ -183,13 +163,13 @@ footer {
   vertical-align: top;
   justify-content: space-around;
 }
-footer div{
+footer div {
   width: 31%;
 }
-footer ul{
+footer ul {
   padding-left: 0px;
 }
-footer li{
+footer li {
   padding-bottom: 14px;
 }
 
