@@ -69,14 +69,17 @@ header ul {
   justify-content: space-around;
 }
 #hebergements div {
-  border: 1px solid green;
-  background-color: #f2f2f2;
+  
 
   width: 55%;
 
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+
+  border: 1px solid green;
+  background-color: #f2f2f2;
+  border-radius: 25px;
 }
 #hebergements div figure {
   width: 300px;
@@ -89,43 +92,53 @@ header ul {
 
   background-color: white;
   border: 1px solid red;
+  border-radius: 25px;
+}
+#hebergements img:not(#populaires img){
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+}
+
+#hebergements figure{
+  padding: 10px;
 }
 
 /*POPULAIRES*/
 #populaires {
-  border: 1px solid green;
-  background-color: #f2f2f2;
-
   display: flex;
   align-items: center;
   flex-flow: column;
+
+  border: 1px solid green;
+  background-color: #f2f2f2;
+  border-radius: 25px;
 }
 #populaires figure {
   width: 400px;
   height: 250px;
 
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   overflow: hidden;
 
   background-color: white;
   border: 1px solid red;
-}
-#populaires img {
-  border: 1px solid blue;
-
-  overflow: hidden;
+  border-radius: 25px;
 }
 #populaires figcaption {
-  border: 1px solid blue;
   position: relative;
-  width: 70%;
+  width: 100%;
+}
+#populaires img{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 /*ACTIVITÉS*/
 #activites {
-  background-color: #f2f2f2;
+  
+
   margin: 4.9%;
   width: 90%;
   
@@ -135,8 +148,11 @@ header ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
 
+  background-color: #f2f2f2;
+  border : 1px solid green;
+  border-radius: 25px;
+}
 #activites figure{
   width: 300px;
   height: 250px;
@@ -145,12 +161,13 @@ header ul {
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-  border: 1px solid black;
 
+  
+  border: 1px solid black;
+  border-radius: 25px;
   flex-grow: 1;
 }
 #activites .first{
-  
   border: 1px solid red;
 
   height: auto;
@@ -161,6 +178,10 @@ header ul {
   width: 400px;
   height: auto;
 }
+#activites figcaption{
+  padding: 10px;
+}
+
 
 /*FOOTER */
 footer {
