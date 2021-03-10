@@ -126,19 +126,22 @@ header ul {
 /*ACTIVITÉS*/
 #activites {
   background-color: #f2f2f2;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 4.9%;
+  width: 90%;
+  
+  align-items: stretch;
 
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 #activites figure{
   width: 300px;
-  height: auto;
+  height: 250px;
 
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
@@ -146,7 +149,12 @@ header ul {
 
   flex-grow: 1;
 }
+#activites .first{
+  
+  border: 1px solid red;
 
+  height: auto;
+}
 #activites .column {
   display: flex;
   flex-direction: column;
