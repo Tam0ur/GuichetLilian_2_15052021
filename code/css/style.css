@@ -1,7 +1,7 @@
 /*ALL*/
 * {
   font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
+  
   
 }
 i {
@@ -66,22 +66,24 @@ header ul {
 }
 
 #recherche i{
-  padding: 9px;
+  padding: 10px;
   background-color: #f2f2f2;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-right: -4.1px;
+  padding-top: 8.5px;
+  padding-bottom: 11px;
 }
 #recherche input:nth-child(2){
-  padding: 9px;
+  padding: 8px;
   
   font-style: bold;
   border: none;
   box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid black;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
 }
 #recherche input:nth-child(3){
   padding: 10px;
@@ -90,6 +92,22 @@ header ul {
   border:none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+/*FILTRES*/
+#filtres button{
+  padding: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#filtres i{
+  background-color: #DEEBFF;
+  padding: 10px;
+  border-radius: 20px;
+  
 }
 
 
@@ -121,8 +139,9 @@ header ul {
   overflow: hidden;
 
   background-color: white;
-  border: 1px solid red;
+  
   border-radius: 25px;
+  box-shadow: 0px 0px 8px rgb(192, 192, 192);
 }
 #hebergements img:not(#populaires img){
   border-top-left-radius: 20px;
@@ -153,8 +172,9 @@ header ul {
   overflow: hidden;
 
   background-color: white;
-  border: 1px solid red;
+  
   border-radius: 25px;
+  box-shadow: 0px 0px 8px rgb(192, 192, 192);
 }
 #populaires figcaption {
   position: relative;
@@ -179,7 +199,7 @@ header ul {
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  background-color: #f2f2f2;
+
   border : 1px solid green;
   border-radius: 25px;
 }
@@ -193,12 +213,12 @@ header ul {
   overflow: hidden;
 
   
-  border: 1px solid black;
+  box-shadow: 0px 0px 8px rgb(192, 192, 192);
   border-radius: 25px;
   flex-grow: 1;
 }
 #activites .first{
-  border: 1px solid red;
+
 
   height: auto;
 }
