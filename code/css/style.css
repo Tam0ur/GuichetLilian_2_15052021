@@ -1,8 +1,9 @@
 /*ALL*/
 * {
   font-family: "Raleway", sans-serif;
-  
-  
+}
+body{
+  margin:0;
 }
 i {
   color: #0065fc;
@@ -16,6 +17,9 @@ p,
 div {
   
   width: 100%;
+}
+figure{
+  cursor: pointer;
 }
 
 /*HEADER*/
@@ -77,7 +81,8 @@ header ul {
 #recherche input:nth-child(2){
   padding: 8px;
   
-  font-style: bold;
+  
+  font-weight: bold;
   border: none;
   box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -85,16 +90,26 @@ header ul {
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
 }
+#recherche input::placeholder{
+  color: black;
+  opacity: 1; /*firefox*/
+}
 #recherche input:nth-child(3){
   padding: 10px;
   background-color: #0065FC;
   color: white;
+  font-weight: bold;
   border:none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+
+  cursor: pointer;
 }
 
 /*FILTRES*/
+#filtres{
+  
+}
 #filtres button{
   padding: 10px;
   border: 2px solid #f2f2f2;
@@ -102,6 +117,8 @@ header ul {
   background-color: white;
   padding: 0px;
   box-sizing: border-box;
+
+  cursor: pointer;
 }
 #filtres i{
   background-color: #DEEBFF;
@@ -117,8 +134,6 @@ header ul {
   justify-content: space-around;
 }
 #hebergements div {
-  
-
   width: 55%;
 
   display: flex;
@@ -130,8 +145,8 @@ header ul {
   border-radius: 25px;
 }
 #hebergements div figure {
-  width: 300px;
-  height: 250px;
+  width: 25%;
+  height: 18em;
 
   display: flex;
   flex-direction: column;
@@ -145,7 +160,11 @@ header ul {
 }
 #hebergements img:not(#populaires img){
   border-top-left-radius: 20px;
-  border-top-right-radius: 10px;
+  border-top-right-radius: 20px;
+
+  object-fit : cover;
+  width: 100%;
+  height: 100%;
 }
 
 #hebergements figure{
@@ -163,12 +182,11 @@ header ul {
   border-radius: 25px;
 }
 #populaires figure {
-  width: 400px;
-  height: 250px;
-
+  width: 80%;
+  height: 15em;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  
   overflow: hidden;
 
   background-color: white;
@@ -177,12 +195,15 @@ header ul {
   box-shadow: 0px 0px 8px rgb(192, 192, 192);
 }
 #populaires figcaption {
-  position: relative;
   width: 100%;
 }
 #populaires img{
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  object-fit : cover;
+  width: 50%;
+  height: 100%;
 }
 
 /*ACTIVITÉS*/
@@ -192,7 +213,7 @@ header ul {
   margin: 4.9%;
   width: 90%;
   
-  align-items: stretch;
+  
 
   display: inline-flex;
   flex-direction: row;
@@ -204,9 +225,6 @@ header ul {
   border-radius: 25px;
 }
 #activites figure{
-  width: 300px;
-  height: 250px;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -215,12 +233,18 @@ header ul {
   
   box-shadow: 0px 0px 8px rgb(192, 192, 192);
   border-radius: 25px;
-  flex-grow: 1;
+  
+}
+#activites img{
+  object-fit: cover;
+  width: 100%;
+  height: 9.5em;
 }
 #activites .first{
-
-
-  height: auto;
+  width: 15%;
+}
+#activites .first img{
+  height: 100%;
 }
 #activites .column {
   display: flex;
@@ -228,6 +252,7 @@ header ul {
   width: 400px;
   height: auto;
 }
+
 #activites figcaption{
   padding: 10px;
 }
@@ -250,6 +275,7 @@ footer ul {
 }
 footer li {
   padding-bottom: 14px;
+  cursor: pointer;
 }
 
 /*FONTS*/
